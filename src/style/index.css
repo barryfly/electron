@@ -1,0 +1,114 @@
+:root {
+  --blue: #26B1E7;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #f93e3c;
+  --orange: #fd7e14;
+  --yellow: #fcbe32;
+  --green: #52C41A;
+  --cyan: #13cbe4;
+  --white: #fff;
+  --grey: #eee;
+  --gray: #676e73;
+  --gray-dark: #343a40;
+  --primary: #26B1E7;
+  --success: #52C41A;
+  --info: #13cbe4;
+  --warning: #fcbe32;
+  --danger: #f93e3c;
+  --light: #f8f9fa;
+  --dark: #001529;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+*,::after,::before {
+  box-sizing: border-box
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  box-sizing: border-box;
+}
+
+/* Flex布局 */
+.flex { display: flex; }
+.flex-1 { flex: 1; }
+.flex-column { flex-direction: column; }
+.align-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+/* Clearfix */
+.float-left { float: left; }
+.float-right { float: right; }
+.clearfix::after { display: block; clear: both; content: ""; }
+
+/* Position */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+/* Box */
+.inline-block { display: inline-block; }
+.w-full { width: 100%; }
+.h-full { height: 100%;}
+
+/* Padding */
+.p-15 { padding: 15px; }
+.p-x-15 { padding: 0 15px; }
+.p-y-15 { padding: 15px 0; }
+.p-t-15 { padding-top: 15px; }
+.p-r-15 { padding-right: 15px; }
+.p-b-15 { padding-bottom: 15px; }
+.p-l-15 { padding-left: 15px; }
+
+/* Margin */
+.m-15 { margin: 15px; }
+.m-x-15 { margin: 0 15px; }
+.m-y-15 { margin: 15px 0; }
+.m-t-15 { margin-top: 15px; }
+.m-r-15 { margin-right: 15px; }
+.m-b-15 { margin-bottom: 15px; }
+.m-l-15 { margin-left: 15px; }
+
+/* Font Size */
+.font-12 { font-size: 12px; }
+.font-16 { font-size: 16px; }
+.font-22 { font-size: 22px; }
+.font-30 { font-size: 30px; }
+.font-bold { font-weight: bold;}
+
+/* Text */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-link { cursor: pointer; }
+
+
+/* Border Radius */
+.rounded { border-radius: .25rem; }
+.rounded-circle { border-radius: 50%; }
+.rounded-pill { border-radius: 50rem; }
+
+/* Background */
+.bg-dark { background-color: var(--dark); }
+.bg-white { background-color: var(--white) }
+.bg-danger { background-color: var(--danger); }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 6px; height: 6px; -webkit-appearance: none; }
+::-webkit-scrollbar-track { background-color: transparent;}
+::-webkit-scrollbar-thumb { border-radius: 7px; background-color: #ABAEB4; }
+.scrollbar { overflow: overlay; }
+.scrollbar::-webkit-scrollbar-thumb { background-color: transparent; }
+.scrollbar:hover::-webkit-scrollbar-thumb { background-color: #ABAEB4; }
